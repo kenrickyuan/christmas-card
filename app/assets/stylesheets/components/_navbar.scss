@@ -1,9 +1,10 @@
 .navbar {
   height: 6vh;
-  background-color: #FE7978;
+  background-color: $pink;
   position: sticky;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }

@@ -1,0 +1,18 @@
+.purple-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pink;
+  color: white;
+  border-radius: 8vw;
+  width: 30%;
+  height: 38px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+  &:focus {
+    outline: none;
+  }
+}

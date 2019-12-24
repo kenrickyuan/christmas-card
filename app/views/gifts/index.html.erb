@@ -1,5 +1,14 @@
-<% @gifts.each do |gift| %>
-<%= gift.name %>
-<% end %>
+<h1 class="home-anime1 animated fadeIn m-0 mt-2 mb-4 text-center" style="font-size: 9vw; font-weight: bold;">Choose a gift:</h1>
 
-<% raise %>
+<div class="d-flex justify-content-around align-items-center">
+  <% colors = ["secondary", "tertiary"] %>
+  <% @gifts.each_with_index do |gift, i| %>
+
+  <a href="<%= gift_path(gift) %>" class="d-flex justify-content-center align-items-center text-center <%= colors[i] %> dark-text" style="width: 40vw; height: 60vw; opacity: 0.9; border-radius: 4vw; font-size: 5vw;"><%= gift.hint %></a>
+
+  <% end %>
+
+
+</div>
+
+

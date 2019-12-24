@@ -1,8 +1,9 @@
 .purple-btn {
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $pink;
+  background-color: $secondary;
   color: white;
   border-radius: 8vw;
   width: 30%;
@@ -15,4 +16,16 @@
   &:focus {
     outline: none;
   }
+}
+
+.secondary {
+  background-color: $secondary;
+}
+
+.tertiary {
+  background-color: $tertiary;
+}
+
+.dark-text {
+  color: $dark;
 }

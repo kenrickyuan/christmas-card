@@ -128,7 +128,7 @@ Gift.create!(
   number_id: 13,
   choice: false,
   hint: 'Who Needs Salons?',
-  description: "You've got the setup, you've got the colors, you've got the gear. But do you really have all the gear..."
+  description: "You've got the setup, you've got the colors, you've got the gear. But do you really have ALL the gear..."
   )
 
 puts "All gifts created!"

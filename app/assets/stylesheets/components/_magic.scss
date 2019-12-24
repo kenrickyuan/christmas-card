@@ -1,0 +1,15 @@
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+.password {
+  border-radius: 6vw;
+  border: 1px solid $green;
+  height: 11vw;
+  width: 38vw;
+  font-size: 6vw;
+  text-align: center;
+  font-weight: bold;
+  color: $pink;
+}

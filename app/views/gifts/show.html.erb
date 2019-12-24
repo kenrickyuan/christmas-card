@@ -1,5 +1,11 @@
-show.html.erb
+<div>
+  <h1 class="home-anime1 animated fadeIn text-center" style="font-size: 11vw; font-weight: bold;">Upcoming gift:</h1>
+  <h1 class="home-anime2 animated fadeIn text-center" style="margin-bottom: 20vw; font-size: 11vw; font-weight: bold;"><%= @gift.hint %></h1>
+  <h3 class="home-anime3 animated fadeIn" style="margin-bottom: 20vw; font-size: 6vw; font-weight: bold; padding-left: 5vw; padding-right: 5vw;"><%= @gift.description %></h3>
 
-<%= @gift.name %>
-<%= @gift.hint %>
-<%= @gift.description %>
+  <div class="button-container">
+    <a href="<%= number_path(@number) %>" class="card-btn gift-anime4 animated fadeIn" style="margin-top: 4vw; height: 11vw; width: 38vw; font-size: 6vw;">Open Gift!
+    </a>
+  </div>
+</div>
+

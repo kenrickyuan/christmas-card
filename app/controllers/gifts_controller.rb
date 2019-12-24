@@ -22,7 +22,7 @@ class GiftsController < ApplicationController
 
   def set_gifts
     if Gift.where("choice = true").where("chosen = false").count.zero?
-      redirect_to root_path
+      redirect_to end_path
     elsif Gift.where("choice = true").where("chosen = false").count == 1
       @gifts = Gift.where("choice = true").where("chosen = false")
     else

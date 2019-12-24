@@ -1,12 +1,12 @@
 class GiftsController < ApplicationController
-  before_action :set_gift, only: [:show]
-  before_action :set_number, only: [:show]
   def index
-
+    set_gifts
   end
 
   def show
-
+    set_gift
+    set_number
+    @gift.chosen = true
   end
 
   private
@@ -17,5 +17,15 @@ class GiftsController < ApplicationController
 
   def set_number
     @number = Number.find(@gift.number_id)
+  end
+
+  def set_gifts
+    if Gift.where("choice = true").where("chosen = false").count.zero?
+      redirect_to root_path
+    elsif Gift.where("choice = true").where("chosen = false").count == 1
+      @gifts = Gift.where("choice = true").where("chosen = false")
+    else
+      @gifts = Gift.where("choice = true").where("chosen = false").sample(2)
+    end
   end
 end

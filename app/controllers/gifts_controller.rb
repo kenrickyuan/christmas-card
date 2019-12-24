@@ -7,6 +7,7 @@ class GiftsController < ApplicationController
     set_gift
     set_number
     @gift.chosen = true
+    @gift.save!
   end
 
   private

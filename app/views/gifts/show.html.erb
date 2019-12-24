@@ -1,11 +1,13 @@
-<div>
-  <h1 class="gift-anime1 animated fadeIn text-center" style="font-size: 11vw; font-weight: bold;">Upcoming gift...</h1>
-  <h1 class="gift-anime2 animated fadeIn text-center" style="margin-bottom: 20vw; font-size: 11vw; font-weight: bold;"><%= @gift.hint %></h1>
-  <h3 class="gift-anime3 animated fadeIn" style="margin-bottom: 20vw; font-size: 6vw; font-weight: bold; padding-left: 6vw; padding-right: 3vw;"><%= @gift.description %></h3>
+<div class="body-container m-0 p-3 d-flex justify-content-center align-items-center" style="height: 96vh;">
+  <div>
+    <h1 class="gift-anime1 animated fadeIn text-center" style="font-size: 11vw; font-weight: bold;">Upcoming gift...</h1>
+    <h1 class="gift-anime2 animated fadeIn text-center" style="margin-bottom: 20vw; font-size: 11vw; font-weight: bold;"><%= @gift.hint %></h1>
+    <h3 class="gift-anime3 animated fadeIn" style="margin-bottom: 20vw; font-size: 6vw; font-weight: bold; padding-left: 6vw; padding-right: 3vw;"><%= @gift.description %></h3>
 
-  <div class="button-container">
-    <a href="<%= number_path(@number) %>" class="card-btn gift-anime4 animated fadeIn" style="margin-top: 4vw; height: 11vw; width: 38vw; font-size: 6vw;">Open Gift!
-    </a>
+    <div class="button-container">
+      <a href="<%= number_path(@number) %>" class="card-btn gift-anime4 animated fadeIn" style="margin-top: 4vw; height: 11vw; width: 38vw; font-size: 6vw;">Open Gift!
+      </a>
+    </div>
   </div>
 </div>
 

@@ -1,16 +1,18 @@
-<div style="width: 100vw;">
-  <h1 class="home-anime1 animated fadeIn m-0 mt-2 mb-4 text-center" style="font-size: 9vw; font-weight: bold;">Choose a gift:</h1>
+<div class="body-container m-0 p-3 d-flex justify-content-center align-items-center" style="height: 96vh;">
+  <div style="width: 100vw;">
+    <h1 class="home-anime1 animated fadeIn m-0 mt-2 mb-4 text-center" style="font-size: 9vw; font-weight: bold;">Choose a gift:</h1>
 
-  <div class="d-flex justify-content-around align-items-center">
-    <% colors = ["secondary", "tertiary"] %>
-    <% anime = ["home-anime2 fadeInLeft", "home-anime2 fadeInRight"] %>
-    <% @gifts.each_with_index do |gift, i| %>
+    <div class="d-flex justify-content-around align-items-center">
+      <% colors = ["secondary", "tertiary"] %>
+      <% anime = ["home-anime2 fadeInLeft", "home-anime2 fadeInRight"] %>
+      <% @gifts.each_with_index do |gift, i| %>
 
-    <a href="<%= gift_path(gift) %>" class="<%= anime[i] %> animated d-flex justify-content-center align-items-center text-center <%= colors[i] %> dark-text" style="width: 40vw; height: 60vw; opacity: 0.9; border-radius: 4vw; font-size: 5vw;"><%= gift.hint %></a>
+      <a href="<%= gift_path(gift) %>" class="<%= anime[i] %> animated d-flex justify-content-center align-items-center text-center <%= colors[i] %> dark-text" style="width: 40vw; height: 60vw; opacity: 0.9; border-radius: 4vw; font-size: 5vw;"><%= gift.hint %></a>
 
-    <% end %>
+      <% end %>
 
 
+    </div>
   </div>
 </div>
 
